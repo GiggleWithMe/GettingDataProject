@@ -60,6 +60,8 @@ else if (x==6){
   x<-acti[6]}
 }
 data$Activity<-lapply(data$Activity,actirnamer)
+##Removed as it causes problems with the write.table() aspect of the assignment.
+##data$avetab$Activity<-lapply(avetab$Activity,actirnamer)
 rm(actirnamer)
 rm(acti)
 
