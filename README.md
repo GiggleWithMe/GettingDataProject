@@ -40,15 +40,25 @@ the description I have here:
 This section merely reads in all the necessary data is a collection of objects. I use the getwd() command in case you use an 
 atypical work directory.
 ###Condensing groups (Part 1a)
-
-### to single set (Part 1b)
-
+This condenses the above set of objects into logical tables, following the tidy data principle. It deletes unused objects as it 
+moves past them. I chose to put the id variables at the front of the table to make easy identification.
+###Condensing to single set (Part 1b)
+Similar to the step above. I chose to do this separately to more easily keep the test and train data frames if they are later 
+desired.
 ###Creating headers (Part 4)
-
+This takes the variable names from features.txt file and apply them to the relevant data frame headers. It also names the header
+ for Subjects and Activity
 ###Limiting columns to means, standard deviation, and identifiers (Part 2)
-
+This step uses character string lookup to identify those columns which contain "Subjects", "Activity", "mean" or "std". It 
+builds an index of the columns that fit the requirement, and discards the rest. Please see the above disclaimer about the choice
+of columns.
 ###Creating table of averages (Part 5)
-
+This step uses the reshape2 package to melt and recast the dataframe to find the averages as described in the project 
+description. I had difficultly with the core packages to get this step done, hence my choice to use the reshape2 package. 
+However use of the package makes the code extremely sussinct. 
 ###Using descriptive activity variables (Part 3)
-
+This final step applies the descriptive names rather than coded ids for each activity. It also includes a hashed-out line which 
+repeats the step for the second table of average results, however this extra step created problems in writing a .txt file 
+(relating to the dimensionality of lists as applied to write.table()). I chose to move on without fixing this step as it seems 
+relatively unnessecary given we are already using coded ids for the subjects anyway.
 
