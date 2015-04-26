@@ -32,3 +32,23 @@ Both the dataset produced, and the averages table try to comply with the tidy da
 
 It is my belief that the "wide" version of the dataset meets this for the projects goals. 
 
+##Script structure
+The script does not follow the steps as outlined in the assignment description, however it DOES achieve all the steps
+in an order that makes more sense to me. I have tried to break the script up with internal commentary which will allign with 
+the description I have here:
+###Reading in the data
+This section merely reads in all the necessary data is a collection of objects. I use the getwd() command in case you use an 
+atypical work directory.
+###Condensing groups (Part 1a)
+
+### to single set (Part 1b)
+
+###Creating headers (Part 4)
+
+###Limiting columns to means, standard deviation, and identifiers (Part 2)
+
+###Creating table of averages (Part 5)
+
+###Using descriptive activity variables (Part 3)
+
+
