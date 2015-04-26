@@ -3,7 +3,8 @@ A repo for Getting and Cleaning Data's course project.
 
 ##Introduction
 First, thank you very much for taking the time to mark my assignment. Please, if you have time, jot down some constructive 
-commentary at the end. It will be greatly appreciated.
+commentary at the end. It will be greatly appreciated. I have in many cases made the script intentionally verbose to make the 
+process as clear as possible. I also try to clean teh kept objects as often as possible.
 
 ##Contents
 This repo contains four files:
